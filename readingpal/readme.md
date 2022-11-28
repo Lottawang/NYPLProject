@@ -18,8 +18,6 @@ NYPLProject - readingpal is a simple web application for user to search a readin
         ```
           python manage runserver
         ```
-2. To run in a Docker
-
 
 ## Usage
 1. Test web ui: 
