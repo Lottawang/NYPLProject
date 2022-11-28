@@ -3,12 +3,19 @@
 NYPLProject - readingpal is a simple web application for user to search a reading from NYPL test APIs and return max 10 similar readings from the same collection from NYPL dataset.
 
 ## Installation
-
 1. To run by local virtual environment by django
-   1. (locate into the NYPLProject folder) activate virtual environment
+   1. Please build the virtual environment by install requirments.txt(Python 3.10.8).
+        
+        for example:
+
         ```
-          source py310_nypl/bin/activate
+        python3.10 -m venv py310_nypl_env
+
+        source py310_nypl_env/bin/activate
+
+        pip install -r requirments.txt
         ```
+
    2. Add NYPL APIs token into NYPLProject/readingpal/nyplapi/configs.py
         ```
           NYPL_API_TOKEN = "" # keep it private
@@ -16,7 +23,7 @@ NYPLProject - readingpal is a simple web application for user to search a readin
 
    3. (locate into the readingpal folder) run django command to start server
         ```
-          python manage runserver
+          python manage.py runserver
         ```
 
 ## Usage
